@@ -133,4 +133,23 @@ int main()
         cin >> ch;
         switch (ch)
         {
-        
+        case '1':
+        {
+            mhs.addNode();
+        }
+        break;
+
+        case '2':
+        {
+            if (mhs.listEmpty())
+            {
+                cout << endl
+                     << "List Kosong" << endl;
+                break;
+            }
+            cout << endl
+                 << "\nMasukkan no mahasiswa yang akan dihapus : ";
+            int nim;
+            cin >> nim;
+            if (mhs.delNode(nim) == false)
+                
